@@ -1,0 +1,117 @@
+*{
+  padding: none;
+  margin: none;
+  box-sizing: border-box;
+}
+
+
+/*styles for overall page*/
+
+body{
+  display: grid;
+  place-items: center;
+  background-color:#1DFBBC;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+ul{
+  list-style-type: none;
+}
+
+/*styles for the heading*/
+
+#heading{
+  display: grid;
+  place-items: center;
+}
+
+h1{
+  font-family: 'Calibri','sans-serif';
+  font-size:700%;
+  color:#FFD966;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 8px 8px #4472C4;
+}
+
+h2{
+  font-family: 'Calibri','sans-serif';
+  font-size:250%;
+  width: 70%;
+}
+
+
+/*styles for the challenge boxes*/
+
+#challenge_section{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.challenge_box{
+  flex: 0 1 350px;
+  font-size: 210%;
+  margin: 40px;
+  background-color:#FFD966;
+  height: 12.5em;
+  border-radius: 1em;
+  border: 4px solid black;
+}
+
+.challenge_no{
+  margin: 0.5em;
+  font-size: 2em;
+  font-weight: 500;
+}
+
+.goal{
+  margin: 0 1em;
+  place-items: center;
+}
+
+/*media queries for responsive design - Mobile first design used */
+
+/*for laptops,desktops,devices with large screens*/
+@media only screen and (min-width: 992px)
+{
+  h1{
+    font-size:350%;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: black;
+    text-shadow: 4px 4px #4472C4;
+  }
+
+  h2{
+    font-size: 1.1em;
+    width: 80%;
+  }
+
+  #challenge_section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 2.5em;
+  }
+
+  .challenge_box{
+    flex: 0 1 15%;
+    font-size: 1em;
+    margin: 10px;
+    background-color:#FFD966;
+    height: 12.5em;
+    border-radius: 1em;
+    border: 2px solid black;
+  }
+
+  .challenge_no{
+    font-weight: 520;
+  }
+}

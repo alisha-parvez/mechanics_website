@@ -1,0 +1,164 @@
+*{
+  padding: none;
+  margin: none;
+  box-sizing: border-box;
+}
+
+
+/*styles for overall page*/
+
+body{
+  display: grid;
+  place-items: center;
+  background-color:#1DFBBC;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+ul{
+  list-style-type: none;
+}
+
+
+
+/*styles for the heading*/
+
+h1{
+  font-family: 'Calibri','sans-serif';
+  font-size:750%;
+  color:#FFD966;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+  text-shadow: 8px 8px #4472C4;
+}
+
+
+/*styles for the challenges section*/
+
+#challenge_section{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.challenge_box{
+  flex: 0 1 700px;
+  margin: 40px;
+  background-color:#FFD966;
+  height: auto;
+  border-radius: 2em;
+  border: 4px solid black;
+}
+
+.challenge_no{
+  font-family: 'Calibri','sans-serif';
+  font-size:300%;
+  padding: 0.5em 0;
+  font-weight: 400;
+}
+
+.star{
+  height: 4em;
+}
+
+.stars_row{
+  padding: 0.7em 0;
+}
+
+.goal{
+  font-family: 'Calibri','sans-serif';
+  font-size: 220%;
+  width: 70%;
+  margin: 0 auto;
+}
+
+.steps_column{
+  padding: 1em 0;
+  margin-bottom: 1em;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.step_button{
+  font-family: 'Calibri','sans-serif';
+  font-size: 250%;
+  margin: 0.25em;
+  padding: 0.5em 1em;
+  border-radius: 0.3em;
+  background: linear-gradient(90deg,#1aeb71,#1aeb5c,#1aeb39);
+}
+
+.step_button:hover{
+  background: linear-gradient(-90deg,#1aeb71,#1aeb5c,#1aeb39);
+  cursor: pointer;
+}
+
+/*styles for all the locked levels*/
+
+.challenge_box:locked{
+  background-color: #e6e6e6;
+}
+
+.step_button:locked{
+  background:linear-gradient(90deg,#b3b3b3,#8f8d8d,#6b6a6a);
+}
+
+/*media queries for responsive design - Mobile first design used */
+
+/*for laptops,desktops,devices with large screens*/
+@media only screen and (min-width: 992px)
+{
+  h1{
+    font-size: 400%;
+    -webkit-text-stroke-width: 1.5px;
+    text-shadow: 4px 4px #4472C4;
+  }
+
+  .challenge_box{
+    flex: 0 1 250px;
+    margin: 20px;
+    border: 2px solid black
+  }
+
+  .challenge_no{
+    font-size: 130%;
+    padding: 1em 0;
+  }
+
+  .goal{
+    font-size: 100%;
+    padding-bottom: 0.2em;
+  }
+
+  .star{
+    height: 2em;
+  }
+
+  .stars_row{
+    padding: 0.2em 0;
+  }
+
+  .steps_column{
+    place-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding:0 0;
+  }
+
+  .step_button{
+    font-size: 90%;
+    margin: 5px 3px;
+    translate: -20%;
+  }
+}
