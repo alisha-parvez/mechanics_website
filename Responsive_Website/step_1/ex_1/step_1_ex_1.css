@@ -51,6 +51,17 @@ ul{
   max-width: 30ch;
 }
 
+table{
+
+  margin: 1em auto;
+  text-align: left;
+}
+
+td{
+    border: 2px solid black;
+    padding: 0.2em 0.4em;
+}
+
 #options li{
   font-size: 350%;
   background: linear-gradient(90deg,#dedede,#bababa,#9e9e9e);
@@ -232,6 +243,17 @@ input{
 
     #nav a{
         margin-top: 1em;
+    }
+
+    table{
+
+      margin: 0.35em auto;
+      text-align: left;
+    }
+
+    td{
+        border: 1.5px solid black;
+        padding: 0.2em 1em;
     }
 
 }

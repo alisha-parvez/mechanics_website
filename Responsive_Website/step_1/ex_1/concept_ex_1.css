@@ -9,6 +9,7 @@ body{
   text-align: center;
 }
 
+
 img{
   display: block;
   width: 90%;
@@ -116,4 +117,5 @@ a{
     width: 80%;
     margin: 1em auto;
   }
+
 }
