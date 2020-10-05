@@ -1,0 +1,118 @@
+*{
+  padding: none;
+  margin: none;
+  box-sizing: border-box;
+}
+
+
+/*styles for overall page*/
+
+body{
+  display: grid;
+  place-items: center;
+  background-color:#1DFBBC;
+  text-align: center;
+}
+
+#main_content{
+  display: grid;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+/*styles for the heading section*/
+
+#heading{
+  display: grid;
+  place-items: center;
+}
+
+
+h1{
+  font-family: 'Calibri','sans-serif';
+  font-size:850%;
+  color:#FFD966;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: black;
+  transform: rotate(-5deg);
+  text-shadow: 8px 8px #4472C4;
+}
+
+h2{
+  font-family: 'Calibri','sans-serif';
+  font-size:300%;
+  color:#FFD966;
+  width: clamp(25ch,70%,50ch);
+  -webkit-text-stroke-width: 1.5px;
+  -webkit-text-stroke-color: black;
+}
+
+
+/*styles for the button section*/
+
+#button_section{
+  display: grid;
+  place-items: center;
+}
+
+.button{
+  font-family: 'Calibri','sans-serif';
+  font-size:300%;
+  color:#FFE699;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #FFC000;
+  background-color:#002060;
+  background: linear-gradient(90deg,#034966,#002060,#034966);
+  font-weight: bolder;
+  border: #034966 2px solid;
+  padding: 0.3em 1em;
+  border-radius: 0.45em;
+  margin: 25px;
+  transition: 0.5s;
+}
+
+
+.button:hover{
+  box-shadow:0 5px 50px #d6c20f, 0 5px 50px #15f4ee,
+            0 5px 50px #15f4ee,0 5px 50px #15f4ee;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+
+
+/*media queries for responsive design - Mobile first design used */
+
+/*for laptops,desktops,devices with large screens*/
+@media only screen and (min-width: 992px)
+{
+  #main_content{
+    top: 40%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  h1{
+    font-size:500%;
+    -webkit-text-stroke-width: 1.5px;
+    text-shadow: 4px 4px #4472C4;
+  }
+
+  h2{
+    font-size:150%;
+    -webkit-text-stroke-width: 0.7px;
+    width: auto;
+  }
+
+  .button{
+      font-size:150%;
+      margin: 15px;
+  }
+}
