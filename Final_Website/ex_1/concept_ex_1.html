@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Beamarang - Concept for step 3 ex 1 </title>
+<style>@import url(../../concept_page.css);
+@import url(../../nav.css);
+</style>
+</head>
+<body>
+
+  <nav>
+    <ul class="nav-links">
+      <li><a href="../../index.html">Home</a></li>
+      <li><a href="../../steps_index.html">Back to all steps</a></li>
+      <li><a href="../step_2.html">Back to step 2</a></li>
+    </ul>
+
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
+
+  <div id="page">
+    <div id="heading">
+      <h1>Concept for ex 1</h1>
+    </div>
+
+    <div id="top_text">
+          <p>
+            The shear force, axial force and bending moment are denoted by V, P and M respectively<br>
+            In order to find their values, we apply the equilibrium equations (Fx=0, Fy=0 and Mz=0) but here, for each equation,
+            we balance the external forces with the internal forces.<br>
+            The sign convention adopted for P, V and M is shown.<br>
+            An easy way to remember the conventions is: For axial force, positive is directed away from the beam.
+            For bending moment, the beam becomes concave by applying positive moment (in the shape of a bowl)<br>
+          </p>
+    </div>
+
+    <div id="right_pics_section">
+    <img src="concept_image.png">
+    <img src="convention_image.png">
+    </div>
+
+    <div id="left_text">
+    <p>There are no horizontal forces in the given problem so the axial force is zero everywhere.<br></p>
+
+      <p>
+      For the shear force
+      from A to C, <br>the <b>total external force in the positive V direction is +P/2</b>.
+      <br>Hence, the internal force needed to balance it is -P/2.
+      <br>Thus, the shear force <b>V is a constant equal to -P/2 from A to C.</b><br>
+    </p>
+
+    <p>
+      For the shear force from C to B,<br>
+      The total external force in the positive V direction is -P + P/2 = -P/2<br>
+      Thus, the internal force needed to balance this external force is<br> <b>V = +P/2</b> in the postive V direction.
+
+    </p>
+
+    <p>
+      At B, the shear force becomes -P/2 + P/2 = 0
+    </p>
+
+    <img src="concept_image_2.png">
+
+    <p>
+      Let us consider the distance from A to be x<br>
+      For the moment, from A to B,<br>
+      the moment in the anticlockwise direction for the left section is given by,
+      (-P/2)*x<br>
+      Thus, the balancing internal bending moment <b>M is given by +1&frasl;2 Px</b>
+    </p>
+
+    <p>
+      For the moment from B to C,<br>
+      the moment in the clockwise direction is given by (P/2)*(x) - (P)*(x-1&frasl;2L) = -1&frasl;2 Px + 1&frasl;2 PL<br>
+      Thus, the balancing internal moment is given by <br>
+      <b>M = -1&frasl;2 Px + 1&frasl;2 PL</b><br>
+    </p>
+
+    <img src="concept_image_3.png">
+
+
+      <p>Now, let's solve a problem by applying what we have learnt here:<br><br></p>
+      <a href="step_2_ex_1.html" class="button">Solve problem</a>
+
+    </div>
+  </div>
+
+
+
+
+</body>
+<script src="../../nav.js" type="text/javascript"></script>
+
+</html>

@@ -1,0 +1,44 @@
+input[type='radio']{
+  height: 50px;
+  border: 2px solid grey;
+}
+
+.option-radio{
+  background: linear-gradient(90deg,#dedede,#bababa,#9e9e9e);
+  width: 70%;
+  padding: 0.5em 2em 2em 2em;
+  border-radius: 0.5em;
+  margin: 1em;
+  text-align: center;
+  /*flex: 0 1 350px;*/
+}
+
+#pic-options{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+}
+
+.option-radio img{
+  max-width: 100%;
+}
+
+/*responsive design Mobile first*/
+
+/*for laptops, pcs and other larger devices*/
+@media only screen and (min-width: 992px)
+{
+  .option-radio{
+    width: 30%;
+    padding: 0.5em 2em 2em 2em;
+    border-radius: 0.5em;
+    margin: 1em;
+  }
+
+  input[type='radio']{
+    height: 10px;
+    border: 2px solid grey;
+  }
+}
