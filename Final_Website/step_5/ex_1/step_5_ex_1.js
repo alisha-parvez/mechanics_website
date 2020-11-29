@@ -1,7 +1,7 @@
 let check_btn=document.getElementById("check_button");
-let answer_1="8";
-let answer_2="55";
-let answer_3="3";
+let answer_1=8;
+let answer_2=55;
+let answer_3=3;
 let result_section=document.getElementById("result_section");
 let input_box_1=document.getElementById("answer_box_1");
 let input_box_2=document.getElementById("answer_box_2");
@@ -9,11 +9,11 @@ let input_box_3=document.getElementById("answer_box_3");
 
 function check()
 {
-  let user_answer_1=input_box_1.value;
-  let user_answer_2=input_box_2.value;
-  let user_answer_3=input_box_3.value;
+  let user_answer_1=parseFloat(input_box_1.value);
+  let user_answer_2=parseFloat(input_box_2.value);
+  let user_answer_3=parseFloat(input_box_3.value);
 
-  if(user_answer_1===answer_1 && user_answer_2===answer_2 && user_answer_3===answer_3)
+  if(user_answer_1<=answer_1+1 && user_answer_1>=answer_1-1 && user_answer_2<=answer_2+1 && user_answer_2>=answer_2-1 && user_answer_3<=answer_3+1 && user_answer_3>=answer_3-1)
   {
     input_box_1.style.background="linear-gradient(90deg,#16c75d,#2ded47,#2ded63,#2ded7a)";
     input_box_2.style.background="linear-gradient(90deg,#16c75d,#2ded47,#2ded63,#2ded7a)";
