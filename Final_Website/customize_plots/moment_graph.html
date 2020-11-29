@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bending Moment Diagram</title>
+  <style media="screen">
+    @import url("moment_graph.css");
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+
+<body>
+
+  <div id="nav"><a href="../index.html">Go back to Home</a></div>
+
+  <div id="Chart_Area">
+        <div id="chart_card">
+
+        <div>
+           <h2>Bending Moment Diagram</h2>
+        </div>
+        <div class="chart">
+          <canvas id="myChart"></canvas>
+        </div>
+      </div>
+  </div>
+
+  <div id="length_input">Enter the length of the rod: <input type="text" id="l"></input><br></div>
+  <div id="Input_section">
+    <div id="Add_Force">
+     Enter the details of the force to be added:<br>
+
+     Magnitude: <input type="text" id="mag_F"></input><br>
+     Acting at distance : <input type="text" id="d_F"></input><br>
+    <div id="add_btn_F" class="add_btn">Add</div>
+    </div>
+
+    <div id="Add_Moment">
+     Enter the details of the point moment to be added:<br>
+     Anticlockwise is considered positive<br>
+
+     Magnitude: <input type="text" id="mag_M"></input><br>
+     Acting at distance : <input type="text" id="d_M"></input><br>
+    <div id="add_btn_M" class="add_btn">Add</div>
+    </div>
+
+    <div id="Add_Dist_Force">
+     Enter the details of the distributed force to be added:<br>
+
+     Magnitude (intensity): <input type="text" id="mag_ds"></input><br>
+     Starts acting at distance : <input type="text" id="start_ds"></input><br>
+     Stops acting at distance : <input type="text" id="stop_ds"></input><br>
+    <div id="add_btn_dist" class="add_btn">Add</div>
+    </div>
+
+    <div class = "list">
+      <div id="force_list">
+      </div>
+
+      <div id="Moment_list">
+      </div>
+
+      <div id="Dist_Force_list">
+      </div>
+    </div>
+
+  </div>
+
+
+</body>
+
+<script type="text/javascript" src="moment_graph.js"></script>
+</html>

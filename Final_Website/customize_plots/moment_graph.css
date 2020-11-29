@@ -1,0 +1,126 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+
+
+#nav{
+  text-align: right;
+  font-size: 1.5em;
+  padding: 1em;
+}
+
+
+a{
+  text-decoration: none;
+}
+
+body{
+  text-align: center;
+
+}
+
+
+h2{
+  font-size: 4.5em;
+  font-family: 'Calibri','sans-serif';
+  margin: 1em;
+}
+
+.chart{
+  width: 90%;
+  margin: 2em auto;
+}
+
+#Add_Force,#Add_Dist_Force,#Add_Moment{
+  line-height: 1.5em;
+  padding: 1em 2em;
+  margin: 1em auto;
+  font-size: 2em;
+  /*border: 1px solid black;*/
+  width: 90%;
+}
+
+.add_btn{
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  margin: 0.5em;
+  border: black solid 1px;
+  background-color: silver;
+}
+
+input{
+  border: 2px solid grey;
+  padding: 0.5em;
+  background-color: rgba(250, 250, 250);
+  font-size: 1em;
+  margin: 1em;
+}
+
+#length_input{
+  font-size: 2em;
+}
+
+
+#force_list,#Dist_Force_list,#Add_Moment{
+  font-size: 2em;
+  line-height: 2em;
+}
+
+/*responsive design using Mobile First Approach*/
+
+/*styles for pcs, laptops and larger devices*/
+@media only screen and (min-width: 992px)
+{
+
+  body{
+    font-size: 50%;
+  }
+
+  #nav{
+    font-size: 2em;
+    padding: 0.5em 1em;
+  }
+
+  h2{
+    margin: 1em;
+    font-size: 3.5em;
+  }
+
+  .chart{
+    width: 50%;
+    margin: 1em auto;
+  }
+
+  .add_btn{
+    display: inline-block;
+    padding: 0.25em 0.5em;
+    margin: 0.5em;
+    border: black solid 1px;
+    background-color: silver;
+  }
+
+  .add_btn:hover{
+    cursor: pointer;
+    color: grey;
+  }
+
+  #Add_Force,#Add_Dist_Force,.list,#Add_Moment{
+    line-height: 1.5em;
+    padding: 1em 2em;
+    width: 25vw;
+  }
+
+  #Input_section{
+    display: flex;
+    flex-direction: row;
+  }
+
+
+  input{
+    font-size: 0.75em;
+    line-height: 1em;
+  }
+}
