@@ -9,18 +9,18 @@
 
 body{
   display: grid;
-  place-items: center;
+  /*place-items: center;*/
   background-color:#1DFBBC;
   text-align: center;
 }
 
 #main_content{
   display: grid;
-  margin: 0;
-  position: absolute;
+  margin: 45% auto;
+  /*position: absolute;
   top: 50%;
   -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+  transform: translateY(-50%);*/
 }
 
 
@@ -61,7 +61,7 @@ h2{
 
 .button{
   font-family: 'Calibri','sans-serif';
-  font-size:300%;
+  font-size:250%;
   color:#FFE699;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: #FFC000;
@@ -94,9 +94,11 @@ a{
 @media only screen and (min-width: 992px)
 {
   #main_content{
-    top: 40%;
+    margin: 0 auto;
+    font-size: 90%;
+    /*top: 40%;
     -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    transform: translateY(-50%);*/
   }
 
   h1{

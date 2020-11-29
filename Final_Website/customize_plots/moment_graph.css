@@ -6,11 +6,6 @@
 
 
 
-#nav{
-  text-align: right;
-  font-size: 1.5em;
-  padding: 1em;
-}
 
 
 a{
@@ -79,11 +74,7 @@ input{
     font-size: 50%;
   }
 
-  #nav{
-    font-size: 2em;
-    padding: 0.5em 1em;
-  }
-
+  
   h2{
     margin: 1em;
     font-size: 3.5em;

@@ -8,8 +8,8 @@
 /*styles for overall page*/
 
 body{
-  padding: none;
-  margin: none;
+  padding: 0;
+  margin: 0;
   display: grid;
   place-items: center;
   background-color:#1DFBBC;

@@ -4,13 +4,32 @@
   <title>Bending Moment Diagram</title>
   <style media="screen">
     @import url("moment_graph.css");
+    @import url("../nav.css");
+    @media only screen and (min-width: 992px)
+    {
+      nav{
+      font-size: 2em;
+      }
+    }
   </style>
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 </head>
 
 <body>
 
-  <div id="nav"><a href="../index.html">Go back to Home</a></div>
+  <nav>
+    <div id="logo">Beamarang</div>
+    <ul class="nav-links">
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="shear_graph.html">Shear Force Diagram Generator</a></li>
+    </ul>
+
+    <div class="burger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </nav>
 
   <div id="Chart_Area">
         <div id="chart_card">
@@ -69,4 +88,5 @@
 </body>
 
 <script type="text/javascript" src="moment_graph.js"></script>
+<script src="../../nav.js" type="text/javascript"></script>
 </html>

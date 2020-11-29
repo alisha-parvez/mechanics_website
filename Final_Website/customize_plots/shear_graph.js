@@ -26,7 +26,7 @@ var chart = new Chart(ctx, {
       labels: y_labels,
         datasets: [{
             label: 'Shear Force V',
-            backgroundColor: 'rgb(255, 99, 132)',
+            backgroundColor: '#1DFBBC',
             borderColor: 'rgb(255, 99, 132)',
             data: data_set
         }]

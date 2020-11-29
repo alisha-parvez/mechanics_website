@@ -18,7 +18,7 @@ const navSlide= () => {
                 link.style.animation="";
               }
               else {
-                link.style.animation= `navLinkFade 1s ease forwards 0.15s`;
+                link.style.animation= `navLinkFade 2s ease forwards 0.25s`;
               }
 
         });
