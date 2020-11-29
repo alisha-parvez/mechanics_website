@@ -5,7 +5,7 @@ let input_box=document.getElementById("answer_box");
 
 function check()
 {
-  let user_answer=input_box.value;
+  let user_answer=parseFloat(input_box.value);
   if(user_answer<=answer+1 && user_answer>=answer-1)
   {
     input_box.style.background="linear-gradient(90deg,#16c75d,#2ded47,#2ded63,#2ded7a)";
